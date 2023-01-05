@@ -10,7 +10,7 @@ int number_swaps = 0;
 void selectionSort(int arr[], int size)
 {
     
-    for(int i = 0 ; i< size-1; i++){//looking at every element; maybe we don't needa look
+    for(int i = 0 ; i< size-1; i++){//looking at every element; maybe don't needa look
         //at the last one tho? size-1?
         
         int min_pos = i; //letting first element be the minimum
@@ -54,7 +54,7 @@ void swap(int *x, int *y){
 void quickSort(int arr[], int size) //more of a wrapper function
 {
  
-    //initally we want to sort the entire array so our bounds are first index to last index
+    //initally want to sort the entire array so our bounds are first index to last index
     //AKA 0 to size-1
     quickSort_Recursion(arr, 0, size-1);
     
@@ -64,7 +64,7 @@ void quickSort_Recursion(int arr[], int l, int h){ //where L and H are low and h
 //L = lower bound of the portion of the array we wanna sort
 //and H = the higher bound of the portion of the array we wanna sort
     
-//here is where we apply the DIVIDE-CONQUER process
+//here applying the DIVIDE-CONQUER process
     if(l<h){
     int pivot_i = partition(arr, l, h);
     quickSort_Recursion(arr, l, pivot_i-1); //left portion of the array
@@ -73,7 +73,7 @@ void quickSort_Recursion(int arr[], int l, int h){ //where L and H are low and h
 }
 
 int partition(int arr[], int l, int h){
-    //step 1 is to get pivot; in this case we'll just set it to our HIGH bound
+    //step 1 is to get pivot; in this case im just setting it to the HIGH bound
     int pivot_val = arr[h];
     
     int i = l;
