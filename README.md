@@ -2,8 +2,6 @@
 
 The different assignments (assignments 0-4) and lab work done for my 3rd year module CSU33D05 (Data structures and Algorithms)
 
-I used Xcode
-
 Assignment 0: CSV file parser
 
 Assignment 1: Hash tables
